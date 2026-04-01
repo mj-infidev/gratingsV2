@@ -1,0 +1,37 @@
+:root {
+    /* Brand Primary (Refined Corporate Red) */
+    --primary-red: #e00006;
+    --primary-red-hover: #c00005;
+    
+    /* Brand Secondary (Refined Accent Yellow) */
+    --accent-yellow: #facc15;
+    --accent-yellow-hover: #eab308;
+
+    /* Services Brand (Refined Oranges) */
+    --service-org: #f97316;
+    --service-org-hover: #ea580c;
+
+    /* Corporate Dark Tones (Oceanic Charcoal) */
+    --dark-bg: #0f172a;
+    --dark-bg-light: #1e293b;
+    --footer-bg: #0f172a;
+
+    /* Neutrals & Layout Backgrounds */
+    --bg-light: #f8fafc;
+    --border-color: #e2e8f0;
+    --gray-light: #cbd5e1;
+    --gray-muted: #f1f5f9;
+
+    /* Typography (Modern High-Contrast Slates) */
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --text-light: #94a3b8;
+    --white: #ffffff;
+    --black: #000000;
+
+    /* Functional Colors */
+    --success: #10b981;
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
