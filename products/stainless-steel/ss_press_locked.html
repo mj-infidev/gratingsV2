@@ -194,13 +194,16 @@
   </div>
   <div class="page-hdr-banner">
     <div class="container">
-      <p class="breadcrumb-nav wow fadeIn" data-wow-duration="0.6s">
-        <a href="../../index.html">Home</a> &nbsp;/&nbsp; <a href="../../products.html">Products</a> &nbsp;/&nbsp;
-        <a href="../../ss_grating.html">Stainless Steel</a> &nbsp;/&nbsp; <span class="text-white">Press-Locked
-          Gratings</span>
-      </p>
-      <h1 class="text-white red-hat fw-600 wow fadeInDown" data-wow-duration="0.8s">Press-Locked Stainless Steel
-        Gratings</h1>
+      <h1 class="text-white red-hat fw-600 wow fadeInDown" data-wow-duration="0.8s">Press-Locked Stainless Steel Gratings</h1>
+      <div class="page-breadcrumb d-inline-block bg-transparent border-0 p-0 m-0 wow fadeIn" data-wow-duration="0.6s">
+        <a class="text-white-50" href="../../index.html">Home</a>
+        <span class="bc-sep text-white-50"> / </span>
+        <a class="text-white-50" href="../../products.html">Products</a>
+        <span class="bc-sep text-white-50"> / </span>
+        <a class="text-white-50" href="../../ss_grating.html">Stainless Steel</a>
+        <span class="bc-sep text-white-50"> / </span>
+        <span class="bc-current text-white">Press-Locked Gratings</span>
+      </div>
       <p class="text-white red-hat mt-3 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
         style="max-width:750px; opacity:0.9; font-size: 1.1rem; line-height: 1.6;">
         Precision Engineering — Rigid, Maintenance-Free Grating Systems manufactured through high-pressure mechanical
@@ -220,16 +223,14 @@
       <div class="side-by-side-card wow fadeInUp" data-wow-duration="0.8s">
         <div class="row">
           <div class="col-lg-6 product-gallery-column">
-            <div class="product-gallery-wrapper">
-              <div class="vertical-thumbnails">
-                <img alt="Press-Locked Detail" class="active" onclick="updateMainImage(this)"
-                  src="../../images/remote/Untitleddesign-2025-10-08T174435122-Picsart-AiImageEnhance_9795.jpeg" />
-                <img alt="Serrated Option" onclick="updateMainImage(this)"
-                  src="../../images/remote/anti_slip_serrated_steel_grating.jpg" />
+            <div class="owl-carousel overview-carousel">
+              <div class="item">
+                <img alt="Press-Locked Detail"
+                  src="../../images/remote/Untitleddesign-2025-10-08T174435122-Picsart-AiImageEnhance_9795.jpeg"
+                  loading="lazy" />
               </div>
-              <div class="main-gallery-view">
-                <img alt="Main View" id="main-product-image"
-                  src="../../images/remote/Untitleddesign-2025-10-08T174435122-Picsart-AiImageEnhance_9795.jpeg" />
+              <div class="item">
+                <img alt="Serrated Option" src="../../images/remote/anti_slip_serrated_steel_grating.jpg" loading="lazy" />
               </div>
             </div>
           </div>
@@ -238,12 +239,12 @@
               <i class="bi bi-info-circle text-danger mr-2"></i>
               Product Overview
             </h2>
-            <p class="red-hat mt-3">
+            <p class="red-hat" style="color: #555; line-height: 1.7; margin-top: 15px;">
               Press-locked gratings are produced using precision-cut flat bars assembled through a high-pressure locking
               process. The bearing bars are accurately slotted, allowing the cross bars to be mechanically pressed into
               position.
             </p>
-            <p class="red-hat">
+            <p class="red-hat" style="color: #555; line-height: 1.7;">
               This manufacturing method creates a rigid, maintenance-free panel without the need for welding, providing
               excellent dimensional accuracy and design flexibility for critical applications.
             </p>
@@ -255,6 +256,7 @@
             </ul>
           </div>
         </div>
+
       </div>
 
       <!-- Technical Specifications Accordion -->
@@ -545,10 +547,6 @@
     });
 
     new WOW().init();
-  </script>
-
-  <script>
-    function updateMainImage(thumb) { var mainImage = document.getElementById('main-product-image'); mainImage.style.opacity = 0; setTimeout(function () { mainImage.src = thumb.src; mainImage.style.opacity = 1; }, 300); var thumbs = document.querySelectorAll('.vertical-thumbnails img'); thumbs.forEach(function (img) { img.classList.remove('active'); }); thumb.classList.add('active'); }
   </script>
   <script src="../../js/product-detail.js?v=2"></script>
 </body>

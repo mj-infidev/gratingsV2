@@ -196,13 +196,16 @@
 
   <div class="page-hdr-banner">
     <div class="container">
-      <p class="breadcrumb-nav wow fadeIn" data-wow-duration="0.6s">
-        <a href="../../index.html">Home</a> &nbsp;/&nbsp; <a href="../../products.html">Products</a> &nbsp;/&nbsp;
-        <a href="../../ss_grating.html">Stainless Steel</a> &nbsp;/&nbsp; <span class="text-white">Custom
-          Fabrication</span>
-      </p>
-      <h1 class="text-white red-hat fw-600 wow fadeInDown" data-wow-duration="0.8s">Stainless Steel Custom
-        Fabrication</h1>
+      <h1 class="text-white red-hat fw-600 wow fadeInDown" data-wow-duration="0.8s">Stainless Steel Custom Fabrication</h1>
+      <div class="page-breadcrumb d-inline-block bg-transparent border-0 p-0 m-0 wow fadeIn" data-wow-duration="0.6s">
+        <a class="text-white-50" href="../../index.html">Home</a>
+        <span class="bc-sep text-white-50"> / </span>
+        <a class="text-white-50" href="../../products.html">Products</a>
+        <span class="bc-sep text-white-50"> / </span>
+        <a class="text-white-50" href="../../ss_grating.html">Stainless Steel</a>
+        <span class="bc-sep text-white-50"> / </span>
+        <span class="bc-current text-white">Custom Fabrication</span>
+      </div>
       <p class="text-white red-hat mt-3 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.2s"
         style="max-width:750px; opacity:0.9; font-size: 1.1rem; line-height: 1.6;">
         Precision Engineering — Bespoke stainless steel solutions including high-accuracy laser cutting, sheet metal
@@ -222,16 +225,13 @@
       <div class="side-by-side-card wow fadeInUp" data-wow-duration="0.8s">
         <div class="row">
           <div class="col-lg-6 product-gallery-column">
-            <div class="product-gallery-wrapper">
-              <div class="vertical-thumbnails">
-                <img alt="Laser Cutting" class="active" onclick="updateMainImage(this)"
-                  src="../../images/remote/csm_Edelstahlrost-Nahaufnahme_f058db7378_ca2a.jpg" />
-                <img alt="Industrial Assembly" onclick="updateMainImage(this)"
-                  src="../../images/remote/131073-9050864_1a9d.webp" />
+            <div class="owl-carousel overview-carousel">
+              <div class="item">
+                <img alt="Laser Cutting" src="../../images/remote/csm_Edelstahlrost-Nahaufnahme_f058db7378_ca2a.jpg"
+                  loading="lazy" />
               </div>
-              <div class="main-gallery-view">
-                <img alt="Main View" id="main-product-image"
-                  src="../../images/remote/csm_Edelstahlrost-Nahaufnahme_f058db7378_ca2a.jpg" />
+              <div class="item">
+                <img alt="Industrial Assembly" src="../../images/remote/131073-9050864_1a9d.webp" loading="lazy" />
               </div>
             </div>
           </div>
@@ -240,11 +240,11 @@
               <i class="bi bi-info-circle text-danger mr-2"></i>
               Service Overview
             </h2>
-            <p class="red-hat mt-3">
+            <p class="red-hat" style="color: #555; line-height: 1.7; margin-top: 15px;">
               We provide precision stainless steel fabrication solutions designed to meet the rigorous requirements of
               commercial, industrial, and infrastructure sectors.
             </p>
-            <p class="red-hat">
+            <p class="red-hat" style="color: #555; line-height: 1.7;">
               Our process combines advanced CNC machinery, skilled workmanship, and strict quality control to deliver
               components with exceptional accuracy and professional surface finishes.
             </p>
@@ -256,6 +256,7 @@
             </ul>
           </div>
         </div>
+
       </div>
 
       <!-- Technical Capacities Accordion -->
@@ -539,10 +540,6 @@
     });
 
     new WOW().init();
-  </script>
-
-  <script>
-    function updateMainImage(thumb) { var mainImage = document.getElementById('main-product-image'); mainImage.style.opacity = 0; setTimeout(function () { mainImage.src = thumb.src; mainImage.style.opacity = 1; }, 300); var thumbs = document.querySelectorAll('.vertical-thumbnails img'); thumbs.forEach(function (img) { img.classList.remove('active'); }); thumb.classList.add('active'); }
   </script>
   <script src="../../js/product-detail.js?v=2"></script>
 </body>
