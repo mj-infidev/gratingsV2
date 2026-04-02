@@ -648,8 +648,8 @@ a {
 }
 
 .accordion-body ul li::before {
-  content: '\f00c';
-  font-family: FontAwesome;
+  content: '\f52f';
+  font-family: 'bootstrap-icons';
   position: absolute;
   left: 0;
   top: 7px;
