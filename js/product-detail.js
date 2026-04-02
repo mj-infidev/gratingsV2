@@ -26,6 +26,15 @@ $(document).ready(function () {
         }
     });
 
+    // Auto-open the Surfaces accordion on page load
+    var $surfBody = $('#acc-surfaces');
+    if ($surfBody.length) {
+        var $surfHeader = $surfBody.closest('.accordion-card').find('.accordion-header');
+        $surfBody.addClass('active').show();
+        $surfHeader.addClass('active');
+        $surfHeader.find('.acc-icon').removeClass('bi-plus-lg').addClass('bi-dash-lg');
+    }
+
     new WOW().init();
 });
 
