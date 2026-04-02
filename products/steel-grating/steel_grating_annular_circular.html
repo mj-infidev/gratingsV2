@@ -233,43 +233,43 @@
             <div class="side-by-side-card wow fadeInUp" data-wow-duration="0.8s">
                 <div class="row">
                     <div class="col-lg-6 product-gallery-column">
-                        <div class="product-gallery-wrapper">
-                            <div class="vertical-thumbnails">
-                                <img alt="Annular Grating Overview" class="active" onclick="updateMainImage(this)"
-                                    src="../../images/remote/Platform-P-14-1_4522.jpg" />
-                                <img alt="Precision Circular Cut" onclick="updateMainImage(this)"
-                                    src="../../images/remote/image_176d70.jpg" />
-                                <img alt="Annular Ring Fabrication" onclick="updateMainImage(this)"
-                                    src="../../images/remote/image_1db449.jpg" />
-                                <img alt="Industrial Application" onclick="updateMainImage(this)"
-                                    src="../../images/remote/images_e1913d.jpg" />
+                        <div class="owl-carousel overview-carousel">
+                            <div class="item">
+                                <img alt="Heavy Duty Round Mild Steel Grating" src="https://5.imimg.com/data5/SELLER/Default/2026/1/573960144/HR/OY/TA/49788853/heavy-duty-round-mild-steel-grating.png" loading="lazy" />
                             </div>
-                            <div class="main-gallery-view">
-                                <img alt="Main View" id="main-product-image"
-                                    src="../../images/remote/Platform-P-14-1_4522.jpg" />
+                            <div class="item">
+                                <img alt="Special Shaped Steel Grating" src="https://www.sino-grating.com/uploads/image/20250318/special-shaped-steel-grating.webp" loading="lazy" />
+                            </div>
+                            <div class="item">
+                                <img alt="Heavy Duty Round Mild Steel Grating Thumbnail" src="https://5.imimg.com/data5/SELLER/Default/2026/1/573973816/WW/TY/DS/49788853/heavy-duty-round-mild-steel-grating-500x500.jpg" loading="lazy" />
+                            </div>
+                            <div class="item">
+                                <img alt="Outdoor Metal Manhole Cover Grating" src="https://www.weldedsteelgrating.com/photo/pd33432748-outdoor_metal_manhole_cover_grating_25_3mm_circular_galvanised_grate.jpg" loading="lazy" />
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 product-info-column">
-                        <ul class="feature-bullet-list red-hat">
-                            <li>
-                                We manufacture and supply annular (circular) steel grating panels engineered for use
-                                around vessels, tanks, columns, towers, and circular platforms. Each panel is
-                                custom-fabricated and precision cut according to site drawings and actual dimensions to
-                                ensure perfect fit, fast installation, and long-term performance.
-                            </li>
-                            <li>
-                                All circular openings, radial cuts, and exposed edges are fully reinforced with welded
-                                binding bars or toe plates, in compliance with project specifications and safety
-                                requirements. This reinforcement enhances structural strength, load distribution, and
-                                edge protection, ensuring safe movement around curved structures.
-                            </li>
-                            <li>
-                                Our annular grating panels are designed to withstand heavy industrial loads, harsh
-                                environments, and extreme temperatures, making them ideal for demanding applications
-                                across Saudi Arabia and the GCC.
-                            </li>
-                        </ul>
+                        <h2 class="red-hat fw-600">
+                            <i class="bi bi-info-circle text-danger mr-2"></i>
+                            Product Overview
+                        </h2>
+                        <p class="red-hat mb-3" style="color: #555; line-height: 1.7;">
+                            We manufacture and supply annular (circular) steel grating panels engineered for use
+                            around vessels, tanks, columns, towers, and circular platforms. Each panel is
+                            custom-fabricated and precision cut according to site drawings and actual dimensions to
+                            ensure perfect fit, fast installation, and long-term performance.
+                        </p>
+                        <p class="red-hat mb-3" style="color: #555; line-height: 1.7;">
+                            All circular openings, radial cuts, and exposed edges are fully reinforced with welded
+                            binding bars or toe plates, in compliance with project specifications and safety
+                            requirements. This reinforcement enhances structural strength, load distribution, and
+                            edge protection, ensuring safe movement around curved structures.
+                        </p>
+                        <p class="red-hat" style="color: #555; line-height: 1.7;">
+                            Our annular grating panels are designed to withstand heavy industrial loads, harsh
+                            environments, and extreme temperatures, making them ideal for demanding applications
+                            across Saudi Arabia and the GCC.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -497,9 +497,7 @@
                         <h2 class="red-hat fw-600">
                             <i class="bi bi-grid-3x3-gap text-danger mr-2">
                             </i>
-                            Standard Mesh
-                            Pitch
-                            Specifications for Press Welded Gratings
+                            Standard Mesh Pitch Specification
                         </h2>
                         <i class="bi bi-plus-lg acc-icon">
                         </i>
@@ -858,9 +856,7 @@
                         <h2 class="red-hat fw-600">
                             <i class="bi bi-rulers text-danger mr-2">
                             </i>
-                            Standard Load Bearing
-                            Bar Depth
-                            &amp; Thickness (Metric &amp; Imperial Sizes)
+                            Standard Load Bearing Bar Depth &amp; Thickness (Metric &amp; Imperial Sizes)
                         </h2>
                         <i class="bi bi-plus-lg acc-icon">
                         </i>
@@ -1777,21 +1773,7 @@
     <script src="../../js/product-detail.js?v=2">
     </script>
 
-    <script>
-        function updateMainImage(thumb) {
-            var mainImage = document.getElementById("main-product-image");
-            mainImage.style.opacity = 0;
-            setTimeout(function () {
-                mainImage.src = thumb.src;
-                mainImage.style.opacity = 1;
-            }, 300);
-            var thumbs = document.querySelectorAll('.vertical-thumbnails img');
-            thumbs.forEach(function (img) {
-                img.classList.remove('active');
-            });
-            thumb.classList.add('active');
-        }
-    </script>
+
 </body>
 
 </html>

@@ -3,18 +3,23 @@
  * Shared accordion & carousel logic for all product detail pages.
  */
 
-// Accordion toggle (one panel open at a time using smoothly animated jQuery)
+// Accordion toggle (one panel open at a time — exclusive mode)
 $(document).ready(function () {
     $('.accordion-header').on('click', function () {
         var target = $(this).data('target');
         var $body = $('#' + target);
         var $icon = $(this).find('.acc-icon');
+        var isAlreadyOpen = $body.hasClass('active');
 
-        if ($body.hasClass('active')) {
-            $body.removeClass('active').slideUp();
-            $(this).removeClass('active');
-            $icon.removeClass('bi-dash-lg').addClass('bi-plus-lg');
-        } else {
+        // Close all open panels first
+        $('.accordion-body.active').removeClass('active').slideUp();
+        $('.accordion-header.active').removeClass('active')
+            .find('.acc-icon')
+            .removeClass('bi-dash-lg')
+            .addClass('bi-plus-lg');
+
+        // If the clicked panel was not already open, open it
+        if (!isAlreadyOpen) {
             $body.addClass('active').slideDown();
             $(this).addClass('active');
             $icon.removeClass('bi-plus-lg').addClass('bi-dash-lg');

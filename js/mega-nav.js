@@ -155,7 +155,9 @@ $(document).ready(function () {
         '.mega-heading a:hover{color:#c00005!important;}' +
         '.mega-link{display:block!important;padding:4px 0!important;color:#333!important;font-size:0.8rem!important;font-weight:500!important;transition:all 0.3s!important;text-decoration:none!important;background:none!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;}' +
         '.mega-link:hover{color:var(--primary-red) !important;padding-left:8px!important;background:none!important;}' +
+        '.mega-link.active{color:var(--primary-red) !important;padding-left:8px!important;background:none!important;font-weight:700!important;}' +
         '.mega-link i{font-size:0.65rem;color:var(--primary-red) ;margin-right:3px;}' +
+        '.dropdown-menu .dropdown-item.active{background-color:rgba(224,0,6,0.05)!important;color:var(--primary-red) !important;font-weight:700!important;border-left:3px solid var(--primary-red)!important;}' +
         '.mega-view-all{display:inline-block;background:linear-gradient(135deg,var(--primary-red) ,#e00006);color:#fff!important;padding:8px 20px;border-radius:25px;font-size:0.85rem;transition:all 0.3s;text-decoration:none!important;}' +
         '.mega-view-all:hover{background:linear-gradient(135deg,#fedc15,#f5c400);color:#1a1a2e!important;transform:translateY(-2px);box-shadow:0 4px 15px rgba(250,0,7,0.3);}' +
         '@media(max-width:991px){.mega-menu-container{position:static!important;width:100%!important;border:none!important;box-shadow:none!important;padding:10px!important;}.mega-col{border:none!important;width:100%!important;}.mega-heading{display:none;}.mega-link{display:none!important;}.mega-view-all{display:none!important;}.navbar-collapse .dropdown-menu{max-height:60vh;overflow-y:auto;}}' +
@@ -239,5 +241,18 @@ $(document).ready(function () {
         e.preventDefault();
         e.stopPropagation();
         window.location.href = rel + 'products.html';
+    });
+
+    // Highlight the current page in the mega menu and mobile menu
+    var currentPath = window.location.pathname;
+    $('.mega-menu-container .mega-link, .dropdown-menu .dropdown-item').each(function() {
+        var href = $(this).prop('href');
+        if (href) {
+            var parser = document.createElement('a');
+            parser.href = href;
+            if (parser.pathname === currentPath) {
+                $(this).addClass('active');
+            }
+        }
     });
 });
