@@ -37,7 +37,7 @@ $(document).ready(function () {
         '<a class="mega-link" href="' + rel + 'products/steel-grating/steel_grating_annular_circular.html"><i class="bi bi-chevron-right"></i>Annular / Circular Steel Grating Panels</a>' +
         '<a class="mega-link" href="' + rel + 'products/steel-grating/steel_grating_ball_proof.html"><i class="bi bi-chevron-right"></i>Ball-Proof Grating Panels</a>' +
         '<a class="mega-link" href="' + rel + 'products/steel-grating/steel_grating_heavy_duty_trench.html"><i class="bi bi-chevron-right"></i>Heavy Duty Trench Gratings</a>' +
-        '<a class="mega-link" href="' + rel + 'products/steel-grating/steel_grating_stair_treads.html"><i class="bi bi-chevron-right"></i>Stair Treads &#8211; Press Welded Type</a>' +
+        '<a class="mega-link" href="' + rel + 'products/steel-grating/steel_grating_stair_treads.html"><i class="bi bi-chevron-right"></i>Stair Treads Gratings</a>' +
         '<a class="mega-link" href="' + rel + 'products/steel-grating/steel_grating_welding_angle.html"><i class="bi bi-chevron-right"></i>Welding Angle with Grating</a>' +
         '<a class="mega-link" href="' + rel + 'products/steel-grating/steel_grating_hinge.html"><i class="bi bi-chevron-right"></i>Hinge Gratings</a>' +
         '</div>' +
@@ -105,7 +105,7 @@ $(document).ready(function () {
         '<a class="dropdown-item" href="' + rel + 'products/steel-grating/steel_grating_annular_circular.html">Annular / Circular Steel Grating Panels</a>' +
         '<a class="dropdown-item" href="' + rel + 'products/steel-grating/steel_grating_ball_proof.html">Ball-Proof Grating Panels</a>' +
         '<a class="dropdown-item" href="' + rel + 'products/steel-grating/steel_grating_heavy_duty_trench.html">Heavy Duty Trench Gratings</a>' +
-        '<a class="dropdown-item" href="' + rel + 'products/steel-grating/steel_grating_stair_treads.html">Stair Treads &#8211; Press Welded Type</a>' +
+        '<a class="dropdown-item" href="' + rel + 'products/steel-grating/steel_grating_stair_treads.html">Stair Treads Gratings</a>' +
         '<a class="dropdown-item" href="' + rel + 'products/steel-grating/steel_grating_welding_angle.html">Welding Angle with Grating</a>' +
         '<a class="dropdown-item" href="' + rel + 'products/steel-grating/steel_grating_hinge.html">Hinge Gratings</a>' +
         // FRP Products

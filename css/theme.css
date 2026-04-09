@@ -28,6 +28,14 @@
     --text-light: #94a3b8;
     --white: #ffffff;
     --black: #000000;
+    
+    /* Black / Dark Scales */
+    --black-rich: #09090b;
+    --black-soft: #18181b;
+    --black-mute: #27272a;
+    --black-dim: #3f3f46;
+    --black-800: #1f2937;
+    --black-900: #111827;
 
     /* Functional Colors */
     --success: #10b981;
