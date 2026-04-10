@@ -80,10 +80,14 @@ $(document).ready(function () {
 
         // Col 5: More Products
         '<div class="mega-col mega-col-5">' +
-        '<div class="mega-heading">MORE PRODUCTS</div>' +
+        '<div class="mega-heading"><a href="' + rel + 'products/more/cast_iron.html">DUCTILE IRON</a></div>' +
+        '<a class="mega-link" href="' + rel + 'products/more/ductile_iron_gully_grating.html"><i class="bi bi-chevron-right"></i>Gully Grating</a>' +
+        '<a class="mega-link" href="' + rel + 'products/more/ductile_iron_manhole_cover.html"><i class="bi bi-chevron-right"></i>Manhole Cover</a>' +
+        
+        '<div class="mega-heading mt-3">MORE PRODUCTS</div>' +
         '<a class="mega-link" href="' + rel + 'products/more/expanded_metal_sheet.html"><i class="bi bi-chevron-right"></i>Expanded Metal Sheet</a>' +
-        '<a class="mega-link" href="' + rel + 'products/more/grating_clamp.html"><i class="bi bi-chevron-right"></i>Grating Clamp GI/SS</a>' +
-        '<div class="text-center mt-3">' +
+        '<a class="mega-link" href="' + rel + 'products/more/grating_clamp.html"><i class="bi bi-chevron-right"></i>Grating Clamp</a>' +
+        '<div class="text-center mt-4">' +
         '<a href="' + rel + 'products.html" class="mega-view-all">View All Products</a>' +
         '</div>' +
         '</div>' +
@@ -133,10 +137,14 @@ $(document).ready(function () {
         '<a class="dropdown-item" href="' + rel + 'products/aluminium/aluminium_handrails.html">Aluminium Handrails</a>' +
         '<a class="dropdown-item" href="' + rel + 'products/aluminium/aluminium_ladder.html">Aluminum Ladder</a>' +
         '<a class="dropdown-item" href="' + rel + 'products/aluminium/aluminium_access_cover.html">Aluminium Access Cover</a>' +
+        // Ductile Iron
+        '<div class="dropdown-item disabled" style="font-weight:700;color:var(--primary-red) !important;border-bottom:1px solid #eee;margin-top:8px;"><a href="' + rel + 'products/more/cast_iron.html" style="color:var(--primary-red) ;text-decoration:none;">DUCTILE IRON</a></div>' +
+        '<a class="dropdown-item" href="' + rel + 'products/more/ductile_iron_gully_grating.html">Gully Grating</a>' +
+        '<a class="dropdown-item" href="' + rel + 'products/more/ductile_iron_manhole_cover.html">Manhole Cover</a>' +
         // More Products
         '<div class="dropdown-item disabled" style="font-weight:700;color:var(--primary-red) !important;border-bottom:1px solid #eee;margin-top:8px;">MORE PRODUCTS</div>' +
         '<a class="dropdown-item" href="' + rel + 'products/more/expanded_metal_sheet.html">Expanded Metal Sheet</a>' +
-        '<a class="dropdown-item" href="' + rel + 'products/more/grating_clamp.html">Grating Clamp GI/SS</a>' +
+        '<a class="dropdown-item" href="' + rel + 'products/more/grating_clamp.html">Grating Clamp</a>' +
         '</div>' +
         '</li>';
 
