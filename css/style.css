@@ -586,6 +586,10 @@ a {
   color: var(--black-soft);
 }
 
+.mesh-table td {
+  text-align: center;
+}
+
 .matrix-table {
   border-collapse: separate;
   border-spacing: 6px;
@@ -739,7 +743,7 @@ a {
 }
 
 .product-info-column p {
-  line-height: 1.85;
+  line-height: 1.7;
   color: var(--black-soft);
   font-size: 1.05rem;
   margin-bottom: 24px;
